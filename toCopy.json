@@ -1,0 +1,14 @@
+{
+    "paths": [
+        {
+            "description": "jbossBackup",
+            "source": "C:\\test1",
+            "destination": "C:\\new"
+        },
+        {
+            "description": "jbossWorkspaceBackup",
+            "source": "C:\\test2",
+            "destination": "C:\\new2"
+        }
+    ]
+}	
