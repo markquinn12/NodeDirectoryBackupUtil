@@ -12,16 +12,20 @@ Git will also need to be added to the env PATH of your machine. For my machine I
 `C:\Program Files (x86)\Git\cmd;`
 
 ##Utility installation
-Run the below command to install globally. This will install the files checked into this project on GITHUB and allow us to run the utility using the keyword: deletedirs
+Run the below command to install globally. This will install the files checked into this project on GITHUB and allow us to run the utility using the keyword: backupdirs
 
 `npm install markquinn12/NodeDirectoryBackupUtil -g`
 
-##Directory/Path explaination
-We can save as many directories as we need in the [toCopy.json](toCopy.json) file. 
+##toCopy.json file explanation
+We can save as many directories as we need in the [toCopy.json](toCopy.json) file. The json contains an array of elements with 3 fields:
+
+- source: The source directory to be copied. All files and folders in this directory will be copied.
+- destination: The destination which everything in 'source' is copied to.
+- description: This is used when copying. Whatever is entered here will be used to name the directory within the destination folder. The utility autmoatically adds a datetime stampt to the end of the folder to avoid conflicts.
 
 ##Utility usage
 - Once installed locate the toCopy.json file. On my machine this is located at: C:\Users\mark\AppData\Roaming\npm\node_modules\directory-backup
-- Edit the [toCopy.json](toCopy.json).
+- Edit the [toCopy.json](toCopy.json) file.
 - Open the command prompt anywhere
 - Run the following command: `backupdirs`
 - You will then see some output.
