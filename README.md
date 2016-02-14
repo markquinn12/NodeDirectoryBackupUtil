@@ -1,6 +1,8 @@
 # NodeDirectoryBackupUtil
 Node.js utility to backup directories read from a .json file
 
+I periodically backup certain directories to dropbox or google drive shared folders. I sometimes get the annoying "File path too long" error. This utility is a way of getting around this error and also a quick way of backing up files.
+
 ####Pre-requisites
 You will need to install Node.js to run the utility and also GIT to be able to download from my repository. I use [chocolatey](https://chocolatey.org/) where available:
 
